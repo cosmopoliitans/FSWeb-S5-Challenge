@@ -75,8 +75,25 @@ const cardEkleyici = (secici) => {
       }
     })
     .catch((error) => {
-      console.log("Error: " + err);
+      console.log("Makaleler getirilemedi: " + err);
     });
 };
+/* const newSelector3 = document.querySelector(secici);
 
+  axios
+    .get("http://localhost:5001/api/makaleler")
+    .then((response) => {
+      const makaleler = response.data;
+
+      // Makaleler dizisindeki her öğe için bir card oluştur
+      makaleler.forEach((makale) => {
+        const card = Card(makale);
+
+        // Card'ı DOM'a ekle
+
+        newSelector3.appendChild(card);
+      });
+    })
+    .catch((error) => console.log("Makaleler getirilemedi", error));
+};*/
 export { Card, cardEkleyici };
